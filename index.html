@@ -5,16 +5,27 @@
 		<!-- The head section contains info for search engines and the browswer and is not seen by site visitors -->
 		<meta charset="UTF-8">
 		<title>Exceptional Realty Group - Luxsury Homes - About</title>
+		<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"> </script>
 	</head>
 	
 	<body>
+	
+	<div id="social">
+	 <a href="#">Twitter</a>
+	 <a href="#">Facebook</a>
+	 <a href="#">Google Plus</a>	
+	</div>
+
 		<header>
+		<div class="wrapper">
+			<div id="logo">
 
-		<h1> Exceptional </h1>
-		<h2>Realty Group</h2>
+				<h1> Exceptional </h1>
+				<h2>Realty Group</h2>
+			</div>
 
-		<p>Hello World!</p>
-		<p>Hello Moon!</p>
 			<nav>
 			<a href="index.html">About</a>
 			<a href="new-properties.html"> New Properties</a>
@@ -23,35 +34,78 @@
 			<a href="contact.html">Contact US</a>
 			<a href="http://hud.gov" target="blank">H.U.D LINK</a>
 			</nav>
+			</div> <!-- wrapper closing -->
 		</header>
 
-<section id="featured-property">
-	<figure>
+<div class="wrapper clearfix">
+	<section id="featured-property" class="col-3 first">
+		<figure>
 
-			<img src="images/intro-pic.jpg" alt="A lovely living room." title="Welcome to exceptional realty">
-		<figcaption>345 Carl Street Apt 12 Carrol Rd. BKLY NY Photo by Num Knutts Richards</figcaption>
-	</figure>
+				<img src="images/intro-pic.jpg" alt="A lovely living room." title="Welcome to exceptional realty">
+			<figcaption>345 Carl Street Apt 12 Carrol Rd. BKLY NY Photo by Num Knutts Richards</figcaption>
+		</figure>
 
-	<p>Hello! Yawn text here some more text blah blah blah</p>
+		<p>Hello! Yawn text here some more text blah blah blah</p>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+
+	<section id="promotional" class="col-2 first">
+		<figure>
+		<video controls>
+			<source src="videos/real-estate.mp4" type="video/mp4">
+			<source src="videos/real-estate.ogg" type="video/ogv">
+			Your browser does not support HTML5 video. <a href="http://browsehappy.com" target="_blank"></a> Please update or use a different browswer.
+		</video>
+		<figcaption> Exceptional Realty Group Promo Vid - Source: Archive.org</figcaption>
+		</figure>
+	</section id="news" class="col-1">
+		<h3>Company News</h3>
+		<p>Lorem ipsum in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+</div>
+
+
+<section id="detials" class="col-1 first">
+	<div class="wrapper clearfix">
+	<div>
+		<h3> contact</h3>
+		<p>
+			email: <a href="mailto: info@exceptionalrealty.com">info@exceptionalrealty.com</a>
+			phone: 555 555 5555
+		</p>
+		<h3>Correspondence</h3>
+		<address> Exceptional Realty
+		Po box 8888888
+		Brooklyn Nyc 11201
+		</address>
+	</div>
+
+<div class="col-1">
+	<h3>Links</h3>
+	<p>
+		<a href="#" target="_blank"> Home Restoration</a><br>
+		<a href="#" target="_blank"> Afordable Mortgages</a><br>
+		<a href="#" target="_blank"> Professional Moving Crew</a>
+	</p>
+	</div>
+	<div class="col-1">
+		<h3>Follow</h3>
+		<a href="#" target="_blank"> YouTube</a><br>
+		<a href="#" target="_blank">Facebook</a><br>
+		<a href="#" target="_blank"> Twitter</a>
+	</div>
 </section>
+</div>
 
-<section id="promotional">
-	<figure>
-	<video controls>
-		<source src="videos/real-estate.mp4" type="video/mp4">
-		<source src="videos/real-estate.ogg" type="video/ogv">
-		Your browser does not support HTML5 video. <a href="http://browsehappy.com" target="_blank"></a> Please update or use a different browswer.
-	</video>
-	<figcaption> Exceptional Realty Group Promo Vid - Source: Archive.org</figcaption>
-	</figure>
-</section>
+
 
 <footer>
 	&copy; 2014 Exceptional Realty. All Rights Reserved
